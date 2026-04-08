@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Trang Chủ - Hệ Thống Frame</title>
+</head>
+
+<frameset rows="229,*,41" border="1">
+    
+    <frame src="frame_title.html" name="frame_title" scrolling="no" noresize="yes">
+
+    <frameset cols="9%,91%">
+        <frame src="frame_content.html" name="frame_content" scrolling="auto" noresize="yes">
+        <frame src="frame_main.html" name="frame_main" scrolling="auto" noresize="yes">
+    </frameset>
+
+    <frame src="frame_aboutme.html" name="frame_aboutme" scrolling="no" noresize="yes">
+
+    <noframes>
+        <body>
+            <p>Trình duyệt của bạn không hỗ trợ thẻ frameset. Vui lòng nâng cấp trình duyệt.</p>
+        </body>
+    </noframes>
+
+</frameset>
+</html>
