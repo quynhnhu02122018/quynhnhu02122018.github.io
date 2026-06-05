@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mục Lục</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(180deg, #1f4068 0%, #16213e 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px 10px;
+            margin: 0;
+        }
+        
+        .sidebar-title {
+            text-align: center;
+            color: #e94560;
+            font-size: 1.6rem;
+            font-weight: bold;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #e94560;
+            text-shadow: 0 0 15px rgba(233, 69, 96, 0.6);
+            letter-spacing: 2px;
+        }
+        
+        .menu-section {
+            margin-bottom: 15px;
+        }
+        
+        .section-header {
+            background: linear-gradient(135deg, #e94560 0%, #c23a51 100%);
+            color: #fff;
+            padding: 12px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 8px;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .section-header:hover {
+            background: linear-gradient(135deg, #ff6b6b 0%, #e94560 100%);
+            transform: scale(1.02);
+        }
+        
+        .menu-items {
+            list-style: none;
+            padding-left: 10px;
+        }
+        
+        .menu-items li {
+            margin-bottom: 5px;
+        }
+        
+        .menu-items a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 15px;
+            color: #fff;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+            border-left: 3px solid #667eea;
+        }
+        
+        .menu-items a:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding-left: 20px;
+            border-left-color: #fff;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .menu-items a .num {
+            background: #e94560;
+            color: white;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.8rem;
+            flex-shrink: 0;
+        }
+        
+        .menu-items a:hover .num {
+            background: white;
+            color: #667eea;
+        }
+        
+        .basic-lessons {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .basic-lessons a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .basic-lessons a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        
+        .basic-lessons a .num {
+            background: white;
+            color: #11998e;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar-title">📚 MỤC LỤC</div>
+    
+   <div class="basic-lessons">
+    <div class="section-header" onclick="toggleMenu('menu1')">
+        📝 Bài Tập 1 ▼
+    </div>
+
+    <ul class="menu-items" id="menu1" style="display: none;">
+        <li><a href="Bai1/index.html" target="frame_Main"><span class="num">1</span> Bài 1</a></li>
+        <li><a href="Bai2/index.html" target="frame_Main"><span class="num">2</span> Bài 2</a></li>
+        <li><a href="Bai3/index.html" target="frame_Main"><span class="num">3</span> Bài 3</a></li>
+        <li><a href="Bai4/index.html" target="frame_Main"><span class="num">4</span> Bài 4</a></li>
+        <li><a href="Bai5/index.html" target="frame_Main"><span class="num">5</span> Bài 5</a></li>
+    </ul>
+</div>  
+
+
+<div class="menu-section">
+    <div class="section-header" onclick="toggleMenu('menu2')">
+        📝 Bài Tập HTML ▼
+    </div>
+
+    <ul class="menu-items" id="menu2" style="display: none;">
+        <li><a href="BaiTapHTML/HTML/1_.html" target="frame_Main"><span class="num">1</span> Bài 1</a></li>
+            <li><a href="BaiTapHTML/HTML/2_Cohaimo.html" target="frame_Main"><span class="num">2</span> Có hai mơ</a></li>
+            <li><a href="BaiTapHTML/HTML/3_ChisoTrenduoi.html" target="frame_Main"><span class="num">3</span> Chỉ số trên/dưới</a></li>
+            <li><a href="BaiTapHTML/HTML/4_Kyhieudacbiet.html" target="frame_Main"><span class="num">4</span> Ký hiệu đặc biệt</a></li>
+            <li><a href="BaiTapHTML/HTML/5_Hieuungvb.html" target="frame_Main"><span class="num">5</span> Hiệu ứng văn bản</a></li>
+            <li><a href="BaiTapHTML/HTML/6_ChuongTrinhDTWeb1.html" target="frame_Main"><span class="num">6</span> CT Đào Tạo Web 1</a></li>
+            <li><a href="BaiTapHTML/HTML/7_ChuongTrinhDTWeb2.html" target="frame_Main"><span class="num">7</span> CT Đào Tạo Web 2</a></li>
+            <li><a href="BaiTapHTML/HTML/8_ChuongTrinhDTWeb.html" target="frame_Main"><span class="num">8</span> CT Đào Tạo Web 3</a></li>
+            <li><a href="BaiTapHTML/HTML/9_ChuongTrinhDTTHVP.html" target="frame_Main"><span class="num">9</span> CT Đào Tạo THVP</a></li>
+            <li><a href="BaiTapHTML/HTML/10_TaisanBill.htm" target="frame_Main"><span class="num">10</span> Tài sản Bill</a></li>
+            <li><a href="BaiTapHTML/HTML/11_Nhacnen.html" target="frame_Main"><span class="num">11</span> Nhạc nền</a></li>
+            <li><a href="BaiTapHTML/HTML/12_ChuongTrinhDaoTao.html" target="frame_Main"><span class="num">12</span> Chương Trình Đào Tạo</a></li>
+            <li><a href="BaiTapHTML/HTML/13_DanhBaWeb.html" target="frame_Main"><span class="num">13</span> Danh Bạ Web</a></li>
+            <li><a href="BaiTapHTML/HTML/14_Albumnhac.html" target="frame_Main"><span class="num">14</span> Album Nhạc</a></li>
+            <li><a href="BaiTapHTML/HTML/15_KetQuaHocTap.html" target="frame_Main"><span class="num">15</span> Kết Quả Học Tập</a></li>
+    </ul>
+</div>
+
+<div class="menu-section">
+    <div class="section-header" onclick="toggleMenu('menu3')">
+        📝 Bài Tập 2 ▼
+    </div>
+
+    <ul class="menu-items" id="menu3" style="display: none;">
+        <li><a href="Bai2_1_online/indiex.html" target="frame_Main">Bài 1</a></li>
+        <li><a href="bai2_2_hoacanh/index.html" target="frame_Main">Bài 2</a></li>
+        <li><a href="bai2_3_mythuat/template.html" target="frame_Main">Bài 3</a></li>
+        <li><a href="Bai2_4_mypham/template.html" target="frame_Main">Bài 4</a></li>
+    </ul>
+</div>
+
+   <script>
+function toggleMenu(id) {
+    var menu = document.getElementById(id);
+
+    if (menu.style.display === "none") {
+        menu.style.display = "block";
+    } else {
+        menu.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
