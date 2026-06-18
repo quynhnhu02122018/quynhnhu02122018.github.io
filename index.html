@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Bài Tập HTML</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        frameset {
+            border: none;
+        }
+        
+        frame {
+            border: none;
+        }
+    </style>
+</head>
+<frameset rows="247,*,50" cols="*">
+    <frame scrolling="no" name="frame_title" noresize="yes" src="frame_title.html">
+    <frameset rows="*" cols="200,*">
+        <frame scrolling="yes" name="frame_content" src="frame_content.html">
+        <frame scrolling="yes" name="frame_Main" src="frame_Main.html">	
+    </frameset>	
+    <frame scrolling="no" name="frame_AboutMe" noresize="yes" src="frame_AboutMe.html">
+    <noframes>Xin lỗi, trình duyệt không trợ giúp frame</noframes>
+</frameset>
+</html>
