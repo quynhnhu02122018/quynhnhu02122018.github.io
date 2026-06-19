@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhạc Online</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        /* Hiệu ứng chữ chuyển động (Nhấp nháy hoặc đổi màu) */
+        .moving-text {
+            font-size: 24px;
+            font-weight: bold;
+            display: inline-block;
+            animation: colorChange 2s infinite alternate;
+        }
+
+        @keyframes colorChange {
+            from { color: black; transform: scale(1); }
+            to { color: #ff0000; transform: scale(1.1); }
+        }
+
+        .music-list {
+            margin-top: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .music-list li {
+            margin-bottom: 10px;
+        }
+
+        .music-list a {
+            color: purple;
+            text-decoration: underline;
+            font-size: 18px;
+        }
+
+        .music-list a:hover {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="moving-text">Nhạc Online</div>
+
+    <ul class="music-list">
+        <li><a href="../Sound/bai1.mp3" target="_blank">Chia xa (Ghé Qua)</a></li>
+        <li><a href="../Sound/bai2.mp3" target="_blank">Nỗi buồn chim sáo (Nhớ người yêu cũ)</a></li>
+        <li><a href="#" target="_blank">Lùi về sau em mãi</a></li>
+        <li><a href="#" target="_blank">Phố nghiêng</a></li>
+        <li><a href="#" target="_blank">Say giấc chiêm bao</a></li>
+        <li><a href="#" target="_blank">Hoàng hôn nắng chiều</a></li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kỹ thuật viên tin học</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* Chèn hình nền giống trong mẫu (nếu bạn có file ảnh) */
+            background-image: url('images/background-envelope.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .header-links {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .header-links a {
+            text-decoration: underline;
+            color: purple;
+        }
+
+        h2.title {
+            color: red;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .nav-modules a {
+            display: block;
+            color: blue;
+            text-decoration: underline;
+            margin-bottom: 5px;
+        }
+
+        .content-section {
+            margin-left: 40px;
+            margin-top: 30px;
+        }
+
+        ol.roman-list {
+            list-style-type: upper-roman;
+            font-weight: bold;
+        }
+
+        ol.decimal-list {
+            list-style-type: decimal;
+            font-weight: normal;
+            margin-left: 20px;
+        }
+
+        .back-to-top {
+            text-align: right;
+            margin-top: 50px;
+        }
+
+        .back-to-top a {
+            color: blue;
+            text-decoration: underline;
+        }
+        
+        /* Tạo khoảng trống để khi click link nhảy đến đúng vị trí */
+        .target-section {
+            padding-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="top" class="header-links">
+        1. Kỹ thuật viên tin học <br>
+        <a href="ChuongTrinhDTWeb.html" target="_self">2. Chuyên ngành Website</a>
+    </div>
+
+    <hr>
+
+    <h2 class="title">Kỹ thuật viên tin học</h2>
+
+    <div class="nav-modules">
+        <a href="#hocphan1">Học phần I</a>
+        <a href="#hocphan2">Học phần II</a>
+        <a href="#hocphan3">Học phần III</a>
+    </div>
+
+    <div class="content-section">
+        
+        <div id="hocphan1" class="target-section">
+            <ol class="roman-list" start="1">
+                <li>Tin Học Căn Bản
+                    <ol class="decimal-list">
+                        <li>Tổng quan cấu trúc máy tính</li>
+                        <li>Hệ điều hành Windows & Internet</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+
+        <div id="hocphan2" class="target-section">
+            <ol class="roman-list" start="2">
+                <li>Tin Học Văn Phòng
+                    <ol class="decimal-list">
+                        <li>Microsoft Word</li>
+                        <li>Microsoft Excel</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+
+        <div id="hocphan3" class="target-section">
+            <ol class="roman-list" start="3">
+                <li>Tin Học Quản Lý
+                    <ol class="decimal-list">
+                        <li>Microsoft Access</li>
+                        <li>Microsoft PowerPoint</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+
+    </div>
+
+    <div class="back-to-top">
+        <a href="#top">Đầu trang</a>
+    </div>
+
+</body>
+</html>

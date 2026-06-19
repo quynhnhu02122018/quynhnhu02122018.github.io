@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thiết kế theo mẫu</title>
+    <style>
+        body {
+            /* Ảnh nền trang mờ và bất động */
+            background-image: url('../Images/Sontung.png'); 
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* Tạo lớp phủ mờ cho nền */
+            background-color: rgba(255, 255, 255, 0.8);
+            background-blend-mode: overlay;
+            
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9); /* Làm nổi bật nội dung trên nền mờ */
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .image-box {
+            /* Ảnh canh lề phải văn bản bao quanh lề trái */
+            float: right;
+            width: 130px; /* Kích thước ngang ảnh 130 */
+            margin-left: 15px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #000;
+        }
+
+        .caption {
+            font-size: 12px;
+            font-style: italic;
+        }
+
+        .content {
+            /* Văn bản canh đều */
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Máy tính "bó tay" với tài sản của Bill Gates</h2>
+
+    <div class="image-box">
+        <img src="../Images/Sontung.png" alt="Bill Gates">
+        <div class="caption">Bill thăm Việt Nam</div>
+    </div>
+
+    <div class="content">
+        Bill Gates, người sáng lập Công ty phần mềm Microsoft và là người giàu nhất thế giới, cho biết cơ quan thuế của Mỹ phải lưu trữ các dữ liệu tài chính của ông vào một máy tính đặc biệt, bởi tài sản của ông quá nhiều. Phát biểu tại một hội nghị do Microsoft tổ chức ở Lisbon, thủ đô Bồ Đào Nha, ông cho rằng một máy tính thông thường không thể xử lý đúng các số liệu tài chính của ông....
+    </div>
+</div>
+
+</body>
+</html>

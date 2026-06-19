@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Kết quả học tập</title>
+    <style>
+        table {
+            width: 600px; /* Độ rộng Table = 600 */
+            border-collapse: collapse; /* Khoảng cách giữa các ô = 0 */
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            border: 1px solid purple; /* Độ dày viền 1, màu tùy ý */
+        }
+
+        th, td {
+            border: 1px solid purple;
+            padding: 8px;
+            text-align: center;
+        }
+
+        /* Màu nền dòng tiêu đề và dòng cuối */
+        .header-row {
+            background-color: #00ff00; /* Màu xanh lá như mẫu */
+            color: black;
+        }
+
+        .footer-row {
+            background-color: #00ff00;
+            font-weight: bold;
+        }
+
+        .title-table {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        /* Canh lề trái cho cột họ tên */
+        .name-column {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="title-table">Kết quả học tập</div>
+
+    <table>
+        <thead>
+            <tr class="header-row">
+                <th rowspan="2">Họ Và tên<br>Học Sinh</th>
+                <th colspan="2">Năm Sinh</th>
+                <th rowspan="2">Điểm<br>TB</th>
+                <th rowspan="2">Xếp Loại</th>
+            </tr>
+            <tr class="header-row">
+                <th>Nam</th>
+                <th>Nữ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="name-column">Lê Thanh Xuân</td>
+                <td></td>
+                <td>1950</td>
+                <td>8.5</td>
+                <td>Giỏi</td>
+            </tr>
+            <tr>
+                <td class="name-column">Phan Thế Hạ</td>
+                <td>1985</td>
+                <td></td>
+                <td>6.5</td>
+                <td>Khá</td>
+            </tr>
+            <tr>
+                <td class="name-column">Trần Hoài Thu</td>
+                <td></td>
+                <td>1986</td>
+                <td>9.5</td>
+                <td>Xuất Sắc</td>
+            </tr>
+            <tr>
+                <td class="name-column">Trương Lưu Đông</td>
+                <td>1984</td>
+                <td></td>
+                <td>6.0</td>
+                <td>Trung Bình</td>
+            </tr>
+            <tr>
+                <td class="name-column">Lưu Thế Mạc</td>
+                <td>1985</td>
+                <td></td>
+                <td>4.5</td>
+                <td>Kém</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="footer-row">
+                <td colspan="3">Tổng số học sinh đạt:</td>
+                <td colspan="2">4 Học sinh</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

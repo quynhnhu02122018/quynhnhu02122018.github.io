@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh bạ Website</title>
+    <style>
+        body {
+            /* Thay đổi đường dẫn ảnh nền phù hợp với thư mục của bạn */
+            background-image: url('../Images/background_pattern.png'); 
+            background-repeat: repeat;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+        }
+
+        h1 {
+            color: blue;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            font-weight: bold;
+            margin-bottom: 5px;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none; /* Bỏ dấu chấm tròn đầu dòng */
+            margin: 0;
+            padding-left: 40px;
+        }
+
+        a {
+            color: black;
+            text-decoration: underline;
+            line-height: 1.6;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        .ads-section {
+            margin-top: 30px;
+        }
+
+        .ads-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .ads-container img {
+            border: 2px solid black;
+            /* Điều chỉnh lại kích thước hiển thị cho giống mẫu */
+            width: 180px; 
+            height: auto;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .footer {
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Danh bạ Website</h1>
+
+        <section>
+            <h3>Tin Tức</h3>
+            <ul>
+                <li><a href="https://www.vnexpress.net" target="_blank">Tin tức việt nam</a></li>
+                <li><a href="https://www.tuoitre.com.vn" target="_blank">Báo tuổi trẻ</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Giải trí</h3>
+            <ul>
+                <li><a href="https://www.nhacso.net" target="_blank">Nhạc số Online</a></li>
+                <li><a href="https://www.ngoisao.net" target="_blank">Giới thiệu ngôi sao</a></li>
+            </ul>
+        </section>
+
+        <section class="ads-section">
+            <h3>Liên kết quảng cáo</h3>
+            <div class="ads-container">
+                <a href="https://www.echip.com.vn" target="_blank">
+                    <img src="../Images/quangcao2.png" alt="Báo eChip">
+                </a>
+                <a href="https://www.vietnamnet.vn" target="_blank">
+                    <img src="../Images/quangcao1.png" alt="Vietnamnet">
+                </a>
+            </div>
+        </section>
+
+        <hr>
+
+        <div class="footer">
+            Liên hệ: <a href="mailto:danbetanh@gmail.com">Gửi mail</a>
+        </div>
+    </div>
+
+</body>
+</html>

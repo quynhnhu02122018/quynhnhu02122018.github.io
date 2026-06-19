@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            /* Màu nền tùy ý (Cyan như trong hình) */
+            background-color: #00ffff;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            /* Văn bản không bị rớt dòng */
+            white-space: nowrap; 
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        /* Đường kẻ ngang không bóng */
+        hr {
+            border: none;
+            border-top: 1px solid #ff4500; /* Màu hơi cam/đỏ */
+            height: 1px;
+            margin: 15px 0;
+        }
+
+        .hr-50 {
+            width: 50%;
+            margin-left: 100px; /* Căn chỉnh vị trí đường kẻ ngắn */
+        }
+
+        /* Màu đỏ cho các ký tự đặc biệt */
+        .special-char {
+            color: blue; /* Trong hình email và ký tự có màu xanh dương đậm */
+            font-weight: bold;
+        }
+        
+        .blue-text {
+            color: #0000ff;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Các ký hiệu đặc biệt:</h2>
+
+    <hr>
+
+    <div class="blue-text">
+        <p>Bản quyền: <span class="special-char">&copy;</span></p>
+        <p>Thương hiệu: <span class="special-char">&trade;</span></p>
+        <p>Thương hiệu đã đăng ký: <span class="special-char">&reg;</span></p>
+        <p>Email: TứngAnh@yahoo.com</p>
+    </div>
+
+    <hr class="hr-50">
+
+</body>
+</html>

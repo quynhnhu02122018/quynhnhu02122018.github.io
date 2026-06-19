@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #00ffff; /* Màu nền Cyan */
+            font-family: Arial, sans-serif;
+            color: #0000ff; /* Màu chữ mặc định là xanh dương */
+            padding: 20px;
+        }
+
+        .title {
+            color: red;
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        /* Định dạng danh sách La Mã (I, II) */
+        .main-list {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Định dạng danh sách con (1, 2, 3) */
+        .sub-list {
+            color: #0000ff;
+            font-weight: normal;
+        }
+
+        .bold-blue {
+            font-weight: bold;
+            color: #0000ff;
+        }
+
+        /* Đường kẻ ngang không bóng, 30% cửa sổ */
+        hr {
+            border: none;
+            border-top: 1px solid #ff4500;
+            width: 30%;
+            margin-trim: 0; /* Căn lề phải theo hình */
+            margin-top: 30px;
+        }
+
+        /* Văn bản chú thích dòng cuối */
+        .footer {
+            font-style: italic;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="title">CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH WEBSITE</div>
+
+    <ol type="I" class="main-list">
+        <li>THIẾT KẾ WEBSITE
+            <ol type="1" class="sub-list">
+                <li>Ngôn ngữ <span class="bold-blue">HTML & FrontPage</span></li>
+                <li>Ngôn ngữ kịch bản <span class="bold-blue">JavaScript</span></li>
+                <li>Thiết kế ảnh động <span class="bold-blue">Media Flash MX</span></li>
+                <li>Thiết kế giao diện <span class="bold-blue">PhotoShop CS</span></li>
+                <li>Thiết kế WebSite <span class="bold-blue">Dreamweaver MX</span></li>
+            </ol>
+        </li>
+
+        <li>LẬP TRÌNH WEBSITE
+            <ol type="1" start="6" class="sub-list">
+                <li>Phân tích & Thiết kế CSDL</li>
+                <li>Lập trình CSDL ASP.NET & SQL Sever</li>
+                <li>Quản trị Website</li>
+                <li><span class="bold-blue">Đề tài tốt nghiệp</span></li>
+            </ol>
+        </li>
+    </ol>
+
+    <hr>
+
+    <div class="footer">
+        Mọi thông tin xin liên hệ: <span style="font-style: italic;">Webmaster@yahoo.com</span>
+    </div>
+
+</body>
+</html>

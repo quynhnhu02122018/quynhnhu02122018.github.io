@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập HTML</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 700px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #1a73e8;
+            text-align: center;
+            border-bottom: 2px solid #e8f0fe;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        .exercise-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Chia làm 2 cột cho gọn */
+            gap: 15px;
+        }
+
+        @media (max-width: 500px) {
+            .exercise-list { grid-template-columns: 1fr; }
+        }
+
+        .exercise-list li {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .exercise-list li:hover {
+            background: #e8f0fe;
+            border-color: #1a73e8;
+            transform: translateY(-2px);
+        }
+
+        .exercise-list a {
+            display: block;
+            padding: 12px 15px;
+            text-decoration: none;
+            color: #3c4043;
+            font-weight: 500;
+        }
+
+        .exercise-list a span {
+            color: #1a73e8;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Bài tập HTML</h1>
+        
+        <ul class="exercise-list">
+            <li><a href="1_.html"><span>01.</span> Cấu trúc cơ bản</a></li>
+            <li><a href="2_Cohaimo.html"><span>02.</span> Thẻ định dạng chữ</a></li>
+            <li><a href="3_ChisoTrenduoi.html"><span>03.</span> Chỉ số trên dưới</a></li>
+            <li><a href="4_Kyhieudacbiet.html"><span>04.</span> Ký hiệu đặc biệt</a></li>
+            <li><a href="5_Hieuungvb.html"><span>05.</span> Hiệu ứng văn bản</a></li>
+            <li><a href="6_ChuongTrinhDTWeb1.html"><span>06.</span> Đào tạo Web 1</a></li>
+            <li><a href="7_ChuongTrinhDTWeb2.html"><span>07.</span> Đào tạo Web 2</a></li>
+            <li><a href="8_ChuongTrinhDTWeb.html"><span>08.</span> Đào tạo Web (Tổng hợp)</a></li>
+            <li><a href="9_ChuongTrinhDTTHVP.html"><span>09.</span> Đào tạo Tin học VP</a></li>
+            <li><a href="10_TaisanBill.htm"><span>10.</span> Quản lý tài sản</a></li>
+            <li><a href="11_Nhacnen.html"><span>11.</span> Nhúng nhạc nền</a></li>
+            <li><a href="12_ChuongTrinhDaoTao.html"><span>12.</span> Chương trình đào tạo</a></li>
+            <li><a href="13_DanhBaWeb.html"><span>13.</span> Danh bạ Website</a></li>
+            <li><a href="14_Albumnhac.html"><span>14.</span> Album nhạc Online</a></li>
+            <li><a href="15_KetQuaHocTap.html"><span>15.</span> Bảng kết quả học tập</a></li>
+            <li><a href="16_Baitapcuoi.html"><span>16.</span> Bài tập tổng hợp 16</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
